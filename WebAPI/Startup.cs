@@ -34,9 +34,9 @@ namespace WebAPI
             
             services.AddControllers();
             //IProductservice baglýlýk gorursen o product manager dir diyor.bizim yerimize newliyor.(içinde data yoksa yap)
-            services.AddSingleton<IProductService, ProductManager>();
+            //services.AddSingleton<IProductService, ProductManager>();
             //Iproductservicemiz Iproducdala baglý  öyleyse efproductdal üret.
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
